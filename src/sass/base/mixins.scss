@@ -1,0 +1,22 @@
+@use '/src/sass/base/variables.scss' as v;
+
+@mixin title {
+    color: v.$dark;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin button {
+    display: block;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid v.$dark;
+    text-align: center;
+    color: v.$dark;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}

@@ -1,3 +1,5 @@
+@use '/src/sass/base/variables.scss' as v;
+
 h1,
 h2,
 h3,
@@ -52,6 +54,10 @@ a {
 html {
     font-family: 'Barlow', sans-serif;
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: v.$light;
 }
 
 .container {
