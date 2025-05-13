@@ -4,4 +4,11 @@
     @include m.title;
     font-style: italic;
     font-size: 24px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1920px) {
+    .title-h1-italic {
+        font-size: 32px;
+    }
 }
