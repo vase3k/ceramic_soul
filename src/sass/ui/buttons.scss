@@ -8,6 +8,22 @@
     height: 50px;
 }
 
+.btn-send {
+    @include m.button;
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+    &:focus {
+        border: 1px solid var(--Ceramic, #c69978);
+        outline: 1px solid var(--Ceramic, #c69978);
+    }
+    &:disabled {
+        color: var(--ui-disabled, #d2d2d2);
+        border: 1px solid var(--ui-disabled, #d2d2d2);
+        outline: 1px solid var(--ui-disabled, #d2d2d2);
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .btn-defalt {
         &:hover {
@@ -20,6 +36,16 @@
             background-color: v.$ui-disabled;
             color: v.$dark;
             border: none;
+        }
+    }
+    .btn-send {
+        &:active {
+            border: 1px solid var(--Ceramic, #c69978);
+            outline: 1px solid var(--Ceramic, #c69978);
+        }
+        &:hover {
+            color: var(--Ceramic, #c69978);
+            border: 1px solid var(--Ceramic, #c69978);
         }
     }
 }
