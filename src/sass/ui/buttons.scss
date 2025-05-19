@@ -24,6 +24,18 @@
     }
 }
 
+.btn-submit {
+    @include m.button;
+    width: 90px;
+    height: 40px;
+    color: var(--Light, #fafafa);
+    border: 1px solid var(--Light, #fafafa);
+    &:disabled {
+        border: 1px solid var(--ui-disabled, #d2d2d2);
+        color: var(--ui-disabled, #d2d2d2);
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .btn-defalt {
         &:hover {

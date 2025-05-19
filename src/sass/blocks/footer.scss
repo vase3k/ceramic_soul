@@ -1,0 +1,107 @@
+@use '/src/sass/base/variables.scss' as v;
+
+.footer {
+    position: relative;
+    padding: 50px 0 107px;
+    background-color: var(--Dark, #232323);
+    text-align: left;
+    color: var(--Light, #fafafa);
+    .container {
+        position: static;
+    }
+    &__text {
+        margin-top: 40px;
+        line-height: normal;
+    }
+    &__form {
+        margin-top: 40px;
+    }
+    &__label {
+        color: var(--ui-active, #d9d9d9);
+        font-size: 14px;
+    }
+    &__label.touch__check-block.touch__label {
+        margin-top: 20px;
+        color: var(--Light, #fafafa);
+    }
+    &__email {
+        display: block;
+        width: 100%;
+        height: 15px;
+        color: var(--Light, #fafafa);
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid var(--ui-active, #d9d9d9);
+    }
+    &__btn {
+        margin-top: 20px;
+    }
+    &__discover {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 66px;
+        row-gap: 41px;
+        .title-h4 {
+            margin-bottom: 40px;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            color: var(--Light, #fafafa);
+            line-height: normal;
+        }
+    }
+    &__follow {
+        margin-top: 40px;
+    }
+    &__icons-wrapper {
+        margin-top: 40px;
+        display: flex;
+        gap: 10px;
+    }
+    &__icon {
+        font-size: 24px;
+        color: #ffffff;
+    }
+    &__copyright {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 50px 0 108px;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+        &__newsletter {
+            width: fit-content;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        padding: 50px 0 117px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer {
+        padding: 80px 0 87px;
+        &__copyright {
+            bottom: 52px;
+        }
+    }
+}
