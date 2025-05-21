@@ -33,6 +33,7 @@
         padding: 50px 10px;
         background-color: var(--Light, #fafafa);
         transition: transform 0.5s;
+        z-index: 1;
         &_active {
             transform: translateX(100%);
         }

@@ -1,6 +1,7 @@
+//libs
 @use '/src/sass/libs/grids-min.css';
 @use '/src/sass/libs/grids-responsive-min.css';
-
+//base
 @use '/src/sass/libs/modern-normalize.min.css';
 @use '/src/sass/libs/fontello.css';
 @use '/src/sass/base/variables.scss' as v;
@@ -16,3 +17,6 @@
 @use '/src/sass/blocks/activities.scss';
 @use '/src/sass/blocks/touch.scss';
 @use '/src/sass/blocks/works.scss';
+@use '/src/sass/blocks/catalog.scss';
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap');
