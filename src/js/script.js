@@ -32,11 +32,11 @@ try {
             contents.forEach((c) => (c.style.display = 'none'));
 
             item.classList.add('catalog__tab_active');
-            contents[index].style.display = 'block';
+            contents[index].style.display = 'flex';
         });
     });
 
-    contents.forEach((c, i) => (c.style.display = i === 0 ? 'block' : 'none'));
+    contents.forEach((c, i) => (c.style.display = i === 0 ? 'flex' : 'none'));
 } catch (e) {}
 
 try {
