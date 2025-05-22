@@ -1,0 +1,97 @@
+@use '/src/sass/base/mixins.scss' as m;
+
+.blog {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    &__title {
+        margin-top: 60px;
+    }
+    &__title-h3 {
+        font-size: 24px;
+        text-align: left;
+    }
+    &__card {
+        background-color: var(--Light, #fafafa);
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        border: 1px solid var(--Dark, #232323);
+    }
+    &__data-column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        padding: 25px 25px 0 25px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__img {
+        max-inline-size: calc(100% + 2px);
+        width: calc(100% + 2px);
+        transform: translate(-1px, -1px);
+    }
+    &__text {
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog {
+        &__wrapper {
+            margin-top: 59px;
+            padding: 25px 25px 0;
+            position: relative;
+            @include m.decoration;
+        }
+        &__data-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 0;
+            border-left: 0;
+        }
+        &__button {
+            margin-top: 0;
+            transform: translateY(-1px);
+        }
+        &__text {
+            padding: 15px 25px 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog {
+        &__wrapper {
+            margin-top: 61px;
+            flex-direction: row;
+            gap: 50px;
+            align-items: flex-start;
+        }
+        &__img {
+            object-fit: cover;
+            height: 240px;
+        }
+        &__card {
+            flex-basis: 520px;
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .blog {
+        padding-bottom: 100px;
+        &__title {
+            margin-top: 100px;
+        }
+        &__wrapper {
+            margin-top: 60px;
+            padding: 25px;
+            gap: 50px;
+        }
+        &__card {
+            flex-basis: 670px;
+        }
+    }
+}

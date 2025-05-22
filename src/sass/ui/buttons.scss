@@ -32,7 +32,28 @@
     border: 1px solid var(--Light, #fafafa);
     &:disabled {
         border: 1px solid var(--ui-disabled, #d2d2d2);
+        outline: 1px solid var(--ui-disabled, #d2d2d2);
         color: var(--ui-disabled, #d2d2d2);
+    }
+}
+
+.btn-read {
+    @include m.button;
+    width: 145px;
+    height: 32px;
+    color: var(--Dark, #232323);
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid var(--Dark, #232323);
+    &:hover {
+        color: var(--Ceramic, #c69978);
+        border: 1px solid var(--Ceramic, #c69978);
+        outline: 1px solid var(--Ceramic, #c69978);
+    }
+    &:active,
+    &:focus {
+        border: 1px solid var(--Ceramic, #c69978);
+        outline: 1px solid var(--Ceramic, #c69978);
     }
 }
 
@@ -58,6 +79,7 @@
         &:hover {
             color: var(--Ceramic, #c69978);
             border: 1px solid var(--Ceramic, #c69978);
+            outline: 1px solid var(--Ceramic, #c69978);
         }
     }
 }
