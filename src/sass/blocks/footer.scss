@@ -27,11 +27,25 @@
     &__email {
         display: block;
         width: 100%;
-        height: 15px;
+        height: 32px;
         color: var(--Light, #fafafa);
         background: transparent;
+        padding-bottom: 15px;
         border: 0;
         border-bottom: 1px solid var(--ui-active, #d9d9d9);
+        &.just-validate-error-field {
+            border-bottom: 1px solid var(--ui-error, #db0c35);
+            &::placeholder {
+                color: var(--ui-error, #db0c35);
+            }
+        }
+        &::placeholder {
+            color: var(--ui-active, #d9d9d9);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
     &__btn {
         margin-top: 20px;

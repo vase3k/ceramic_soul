@@ -124,15 +124,26 @@
                 <div class="footer__newsletter">
                     <h4 class="title-h4">newsletter</h4>
                     <p class="footer__text">Keep up to date with news and promotions</p>
-                    <form class="footer__form" action="#">
-                        <label required class="footer__label">
-                            Enter your e-mail
-                            <input required class="footer__email" type="email" />
-                        </label>
+                    <form class="footer__form" action="#" id="footer__form">
+                        <input
+                            placeholder="Enter your e-mail"
+                            required
+                            class="footer__email"
+                            type="email"
+                            id="footer__email"
+                        />
+                        <div class="footer-mail-error-message"></div>
                         <label class="touch__label touch__check-block footer__label" for="checkbox">
-                            <input required required class="touch__checkbox" type="checkbox" />
+                            <input
+                                required
+                                required
+                                class="touch__checkbox"
+                                type="checkbox"
+                                id="footer__checkbox"
+                            />
                             I agree with the <a href="#">terms</a>
                         </label>
+                        <div class="footer-checkbox-error-message"></div>
                         <button class="btn-submit footer__btn" type="submit">submit</button>
                     </form>
                 </div>
