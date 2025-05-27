@@ -5,6 +5,7 @@ import JustValidate from 'just-validate';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'animate.css';
 import '/src/sass/style.scss';
 
 try {
