@@ -8,9 +8,10 @@ const removeCrossorigin = () => {
     return {
         name: 'remove-crossorigin',
         transformIndexHtml(html) {
-            return html
-                .replace(`type="module" crossorigin`, 'type="module"')
-                .replace(`rel="stylesheet" crossorigin`, 'rel="stylesheet"');
+            while (html.includes('crossorigin')) {
+                html = html.replace('crossorigin', '');
+            }
+            return html;
         },
     };
 };
