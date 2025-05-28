@@ -1,7 +1,19 @@
 import fs from 'fs';
 import path from 'path';
 
-function createFoldersPlugin(folders = []) {
+export default function createFoldersPlugin(
+    folders = [
+        'src/img',
+        'src/sass',
+        'src/sass/base',
+        'src/sass/blocks',
+        'src/sass/libs',
+        'src/sass/ui',
+        'src/font',
+        'src/js',
+        'src/logo',
+    ]
+) {
     return {
         name: 'vite-plugin-create-folders',
         apply: 'serve',
@@ -19,19 +31,9 @@ function createFoldersPlugin(folders = []) {
     };
 }
 
-export default function createFolders() {
-    return createFoldersPlugin([
-        'src/img',
-        'src/sass',
-        'src/sass/base',
-        'src/sass/blocks',
-        'src/sass/libs',
-        'src/sass/ui',
-        'src/font',
-        'src/js',
-        'src/logo',
-    ]);
-}
+// export default function createFolders() {
+//     return createFoldersPlugin();
+// }
 
 // import { defineConfig } from 'vite';
 // import createFolders from './vite-plugin-create-folders.js';
