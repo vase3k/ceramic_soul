@@ -16,7 +16,7 @@ const removeCrossorigin = () => {
 };
 
 export default defineConfig({
-    base: '',
+    base: './',
     build: {
         rollupOptions: {
             input: {
