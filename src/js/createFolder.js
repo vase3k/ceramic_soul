@@ -12,6 +12,7 @@ export default function createFoldersPlugin(
         'src/font',
         'src/js',
         'src/logo',
+        'src/favicon',
     ]
 ) {
     return {
